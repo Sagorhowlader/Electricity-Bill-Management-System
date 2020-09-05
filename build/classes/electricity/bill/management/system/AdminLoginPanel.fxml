@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="electricity.bill.management.system.AdminLoginPanelController">
+   <children>
+      <Pane id="loginpanelbacktop" prefHeight="100.0" prefWidth="640.0" style="-fx-background-color: #4775d1;">
+         <children>
+            <Label fx:id="back_lb" layoutX="121.0" layoutY="33.0" style="-fx-blend-mode: Color_Dodge;" text="Electricity Bill Management System" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="458.0" prefHeight="23.0" prefWidth="640.0" style="-fx-background-color: #1f3d7a;">
+         <children>
+            <Label fx:id="copy_lb" layoutX="303.0" layoutY="5.0" text="©2019" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextField fx:id="un_tf" layoutX="298.0" layoutY="200.0" promptText="Please Enter User Name" />
+      <PasswordField fx:id="up_tf" layoutX="298.0" layoutY="248.0" promptText="Please Enter Password" />
+      <Button fx:id="login_btn" layoutX="298.0" layoutY="304.0" mnemonicParsing="false" onAction="#login" text="Login" />
+      <Label fx:id="un_label" layoutX="194.0" layoutY="203.0" text="User Name">
+         <font>
+            <Font name="Cambria" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="up_lb" layoutX="194.0" layoutY="251.0" text="Password">
+         <font>
+            <Font name="Cambria" size="16.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="goback_hl" layoutX="291.0" layoutY="405.0" onAction="#goback" text="Go Back">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

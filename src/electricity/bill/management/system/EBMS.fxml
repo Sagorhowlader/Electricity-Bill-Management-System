@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="electricity.bill.management.system.EBMSController">
+   <children>
+      <Pane id="loginpanelbacktop" prefHeight="100.0" prefWidth="640.0" style="-fx-background-color: #4775d1;">
+         <children>
+            <Label fx:id="back_lb" layoutX="121.0" layoutY="33.0" style="-fx-blend-mode: Color_Dodge;" text="Electricity Bill Management System" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="458.0" prefHeight="23.0" prefWidth="640.0" style="-fx-background-color: #1f3d7a;">
+         <children>
+            <Label fx:id="copy_lb" layoutX="303.0" layoutY="5.0" text="©2019" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label fx:id="user_type_label" layoutX="217.0" layoutY="176.0" text="Please Select An User Type">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="user_type_admin" layoutX="217.0" layoutY="271.0" mnemonicParsing="false" onAction="#Admin" prefHeight="33.0" prefWidth="86.0" text="Admin">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="user_login_customer" layoutX="337.0" layoutY="271.0" mnemonicParsing="false" onAction="#Customer" text="Customer">
+         <font>
+            <Font name="Bell MT" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

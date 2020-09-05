@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="electricity.bill.management.system.CheckHashController">
+   <children>
+      <Pane id="loginpanelbacktop" prefHeight="100.0" prefWidth="640.0" style="-fx-background-color: #4775d1;">
+         <children>
+            <Label fx:id="back_lb" layoutX="121.0" layoutY="33.0" style="-fx-blend-mode: Color_Dodge;" text="Electricity Bill Management System" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutY="458.0" prefHeight="23.0" prefWidth="640.0" style="-fx-background-color: #1f3d7a;">
+         <children>
+            <Label fx:id="copy_lb" layoutX="303.0" layoutY="5.0" text="©2019" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView fx:id="chkhashes_tv" layoutX="14.0" layoutY="181.0" prefHeight="240.0" prefWidth="612.0">
+        <columns>
+          <TableColumn fx:id="hashcd_tc" prefWidth="274.0" style="-fx-alignment: CENTER;" text="HashCode" />
+            <TableColumn fx:id="amount_tc" prefWidth="144.0" style="-fx-alignment: CENTER;" text="Amount" />
+            <TableColumn fx:id="status_tc" prefWidth="101.0" style="-fx-alignment: Center;" text="Status" />
+            <TableColumn fx:id="action_tc" prefWidth="92.0" style="-fx-alignment: center;" text="Action" />
+        </columns>
+      </TableView>
+      <Label fx:id="wel_lb" layoutX="14.0" layoutY="115.0" text="Welcome">
+         <font>
+            <Font name="Cambria" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="username_lb" layoutX="78.0" layoutY="115.0">
+         <font>
+            <Font name="Cambria" size="16.0" />
+         </font>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </Label>
+      <Hyperlink fx:id="log_hl" layoutX="574.0" layoutY="112.0" onAction="#logout" text="Logout">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="goback_hl" layoutX="291.0" layoutY="421.0" onAction="#goback" text="Go Back">
+         <font>
+            <Font name="Bell MT" size="14.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>
